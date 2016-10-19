@@ -15,10 +15,12 @@ url                      : # the base hostname & protocol for your site e.g. "ht
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 host                     : 114.215.139.110
 port                     : 80
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "pincution/learn" 
+# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 detach                   : true
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true
+#, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -84,7 +86,7 @@ author:
   avatar           : "bio-photo.jpg"
   bio              : "-"
   location         : "Peking"
-  email            :
+  email            : "pincution@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -105,7 +107,7 @@ author:
   tumblr           :
   twitter          :
   vine             :
-  weibo            :
+  weibo            : 
   xing             :
   youtube          :
 
@@ -230,3 +232,11 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+    
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      comments: false

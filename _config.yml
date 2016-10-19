@@ -184,6 +184,7 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 gems:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-archives
   - jekyll-gist
   - jekyll-feed
   - jemoji
@@ -214,16 +215,17 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+   enabled:
+     - categories
+     - tags
+   layouts:
+     category: archive-taxonomy
+     tag: archive-taxonomy
+   permalinks:
+     year: '/archives/year/:year/'
+     month: '/archives/month/:year-:month/'
+     tag: '/archives/tag/:name/`
 
 
 # HTML Compression
